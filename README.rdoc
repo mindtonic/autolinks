@@ -1,6 +1,6 @@
 = autolinks
 
-Description goes here.
+Autolinks automatically replaces urls, emails, twitter handles and hashtags with html links
 
 == Contributing to autolinks
  
