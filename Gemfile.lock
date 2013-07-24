@@ -1,0 +1,34 @@
+PATH
+  remote: .
+  specs:
+    autolinks (0.1.0)
+      sanitize
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    diff-lcs (1.2.4)
+    ffaker (1.16.2)
+    mini_portile (0.5.1)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
+    rake (10.1.0)
+    rspec (2.14.1)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.4)
+    rspec-expectations (2.14.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.14.1)
+    sanitize (2.0.6)
+      nokogiri (>= 1.4.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  autolinks!
+  ffaker
+  rake
+  rspec (~> 2.6)
