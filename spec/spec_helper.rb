@@ -23,4 +23,15 @@ module Autolinks
   This is a test string with some #hashtags and other types of #marked #content....
   winning! We're #1! email@email.com. We're also going to test some URL's: http://google.com,
   or http://google.com/, or google.com, or http://google.co.uk, or google.co.uk"
+
+  TEST_URLS = [
+    "http://foo.com/blah_blah",
+    "http://foo.com/blah_blah/",
+    "http://www.extinguishedscholar.com/wpglob/?p=364.",
+    "http://6303E4C1-6A6E-45A6-AB9D-3A908F59AE0E.org",
+    "http://www.quillandquire.com/blog/index.php/bookselling-2/2012/11/12/qa-the-monkeys-paw-introduces-the-biblio-mat-book-vending-machine/",
+    "http://google.co.uk",
+    "http://foo.com/blah_(wikipedia)_blah#cite-1",
+    "http://mw1.google.com/mw-earth-vectordb/kml-samples/gp/seattle/gigapxl/$[level]/r$[y]_c$[x].jpg"
+  ]
 end

@@ -9,11 +9,11 @@ module Autolinks
     end
 
     def self.http
-      /(https?:\/\/[\S]+\.[a-z\/\.]+)/i
+      /(https?:\/\/[\S]+\.[!#$&-;=?-[\]_a-z~]|%[\w\d]{2}]+[\w])/i
     end
 
     def self.http_address
-      /https?:\/\/([\S]+\.[a-z\/\.]+)/i
+      /https?:\/\/([\S]+\.[!#$&-;=?-[\]_a-z~]|%[\w\d]{2}]+[\w])/i
     end
 
     def self.hashtag

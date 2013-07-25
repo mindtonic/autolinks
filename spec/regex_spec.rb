@@ -21,15 +21,27 @@ describe Autolinks::Regex do
     end
   end
 
-  describe "http" do
+  describe "http", focus: true do
     it "should match the complete urls in the Test String" do
-      Autolinks::TEST_STRING.scan(Autolinks::Regex.http).flatten.should == ["http://google.com", "http://google.com/", "http://google.co.uk"]
+      Autolinks::TEST_STRING.scan(Autolinks::Regex.http).flatten.should == ["http://google.com", "http://google.com", "http://google.co.uk"]
+    end
+
+    Autolinks::TEST_URLS.each do |link|
+      it "should match #{link}" do
+        link.scan(Autolinks::Regex.http).flatten.should == [link.gsub(/\W$/, '')]
+      end
     end
   end
 
-  describe "http_address" do
+  describe "http_address", focus: true do
     it "should match the complete urls in the Test String" do
-      Autolinks::TEST_STRING.scan(Autolinks::Regex.http_address).flatten.should == ["google.com", "google.com/", "google.co.uk"]
+      Autolinks::TEST_STRING.scan(Autolinks::Regex.http_address).flatten.should == ["google.com", "google.com", "google.co.uk"]
+    end
+
+    Autolinks::TEST_URLS.each do |link|
+      it "should match #{link}" do
+        link.scan(Autolinks::Regex.http_address).flatten.should == [link.gsub(/https?:\/\//, '').gsub(/\W$/, '')]
+      end
     end
   end
 
