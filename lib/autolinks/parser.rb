@@ -21,11 +21,11 @@ module Autolinks
     end
 
     def replace_handle
-      @text.gsub!(Regex.handle, '<a href="http://twitter.com/\1" target="_blank">@\1</a>')
+      @text.gsub!(Regex.handle_name, '<a href="http://twitter.com/\1" target="_blank">@\1</a>')
     end
 
     def replace_url
-      @text.gsub!(Regex.http, '<a href="http://\1" target="_blank">\1</a>')
+      @text.gsub!(Regex.http_address, '<a href="http://\1" target="_blank">\1</a>')
     end
 
     def replace_email
@@ -33,7 +33,7 @@ module Autolinks
     end
 
     def replace_hashtag
-      @text.gsub!(Regex.hashtag, '<a href="http://twitter.com/search?q=%23\1" target="_blank">#\1</a>')
+      @text.gsub!(Regex.hashtag_name, '<a href="http://twitter.com/search?q=%23\1" target="_blank">#\1</a>')
     end
   end
 end
