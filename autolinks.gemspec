@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Jay Sanders"]
   gem.email         = ["mindtonic@gmail.com"]
   gem.description   = "Autolinks automatically replaces urls, emails, twitter handles and hashtags with html links"
-  gem.summary       = ""
+  gem.summary       = "Autolinks automatically replaces urls, emails, twitter handles and hashtags with html links"
   gem.homepage      = "http://github.com/mindtonic/autolinks"
   gem.license       = "MIT"
   # Files
