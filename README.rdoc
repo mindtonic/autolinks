@@ -3,12 +3,24 @@
 Autolinks automatically replaces urls, emails, twitter handles and hashtags with html links
 
     # Text block to render
-    text = "@thishandle #communicates with @thisotherhandle. This is a test string with some #hashtags and other types of #marked #content. winning! We're #1! email@email.com. We're also going to test some URL's: http://google.com, or http://google.com/, or http://google.co.uk."
+    text = "@thishandle #communicates with @thisotherhandle. This is a test string with some #hashtags and 
+    other types of #marked #content. winning! We're #1! email@email.com. We're also going to test some URL's: 
+    http://google.com, or http://google.com/, or http://google.co.uk."
     
     # Render out the HTML
     puts Autolinks.parse(text)
     
-    => <a href="http://twitter.com/thishandle" target="_blank">@thishandle</a> <a href="http://twitter.com/search?q=%23communicates" target="_blank">#communicates</a> with <a href="http://twitter.com/thisotherhandle" target="_blank">@thisotherhandle</a>. This is a test string with some <a href="http://twitter.com/search?q=%23hashtags" target="_blank">#hashtags</a> and other types of <a href="http://twitter.com/search?q=%23marked" target="_blank">#marked</a> <a href="http://twitter.com/search?q=%23content" target="_blank">#content</a>. winning! We're <a href="http://twitter.com/search?q=%231" target="_blank">#1</a>! <a href="mailto:email@email.com" target="_blank">email@email.com</a>. We're also going to test some URL's: <a href="http://google.com" target="_blank">google.com</a>, or <a href="http://google.com" target="_blank">google.com</a>/, or <a href="http://google.co.uk" target="_blank">google.co.uk</a>.
+    => <a href="http://twitter.com/thishandle" target="_blank">@thishandle</a> 
+    <a href="http://twitter.com/search?q=%23communicates" target="_blank">#communicates</a> with 
+    <a href="http://twitter.com/thisotherhandle" target="_blank">@thisotherhandle</a>. This is a test string 
+    with some <a href="http://twitter.com/search?q=%23hashtags" target="_blank">#hashtags</a> and other types 
+    of <a href="http://twitter.com/search?q=%23marked" target="_blank">#marked</a> 
+    <a href="http://twitter.com/search?q=%23content" target="_blank">#content</a>. winning! We're 
+    <a href="http://twitter.com/search?q=%231" target="_blank">#1</a>! 
+    <a href="mailto:email@email.com" target="_blank">email@email.com</a>. We're also going to test some URL's: 
+    <a href="http://google.com" target="_blank">google.com</a>, or 
+    <a href="http://google.com" target="_blank">google.com</a>/, or 
+    <a href="http://google.co.uk" target="_blank">google.co.uk</a>.
 
 == Contributing to autolinks
  
