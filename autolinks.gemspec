@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.version       = Autolinks::VERSION
   gem.authors       = ["Jay Sanders"]
   gem.email         = ["mindtonic@gmail.com"]
-  gem.description   = "Autolinks automatically replaces urls, emails, twitter handles and hashtags with html links"
+  gem.description   = "Autolinks automatically replaces urls, emails, twitter handles and hashtags with html links within a text block"
   gem.summary       = "Autolinks automatically replaces urls, emails, twitter handles and hashtags with html links"
   gem.homepage      = "http://github.com/mindtonic/autolinks"
   gem.license       = "MIT"
@@ -19,8 +19,8 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
   # Development
-  gem.add_development_dependency "rspec", "~> 2.6"
-  gem.add_development_dependency "ffaker"
+  gem.add_development_dependency "rspec", '~> 3.1', '>= 3.1.0'
+  gem.add_development_dependency "ffaker", '~> 1.30', '>= 1.30.0'
   # Dependencies
-  gem.add_dependency "sanitize"
+  gem.add_dependency "sanitize", '~> 3.1', '>= 3.1.0'
 end
